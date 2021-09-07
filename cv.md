@@ -30,3 +30,6 @@ function sumTriangularNumbers(n) {
   return sum;
 };
 `````
+6. Work experience: I had little experience in creating a website (project for a friend) and installing it on a hosting. You can familiarize yourself with this project by following the link on GitHub: [My project](https://andru12388.github.io/). This site has now been successfully replaced with the WordPress version.
+7. Education: Graduated from the Belarusian State University of Physical Culture (BSUPC), the Faculty of Physical Culture and Sports, the Department of Cross-Country Skiing.
+8. English: I have A1 level
