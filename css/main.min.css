@@ -6501,6 +6501,150 @@ body {
   height: 181px;
 }
 
+.header .header_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 3%;
+  background-color: rgba(88, 88, 224, 0.9);
+}
+
+.header .header_top .h2 {
+  margin: 0 0 0 3.5%;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #000;
+}
+
+.header .header_top .h2 a {
+  display: block;
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease;
+}
+
+.header .header_top .h2 a:hover {
+  color: #fff;
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease;
+}
+
+.header .header_top .nav {
+  margin: 0 auto;
+  max-height: 100%;
+  font-size: 16px;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.header .header_top .nav ul, .header .header_top .nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header .header_top .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header_top .nav ul a {
+  display: block;
+  position: relative;
+  padding: 20px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease;
+}
+
+.header .header_top .nav ul a:hover {
+  color: #fff;
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease;
+}
+
+#toggle {
+  display: none;
+}
+
+.toddle-container {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 2%;
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.toddle-container .button {
+  opacity: 0;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.toddle-container .button-toggle {
+  opacity: 0;
+  top: 0;
+  right: 2%;
+  position: absolute;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+#toggle:checked ~ .nav {
+  max-height: 100%;
+  font-size: 16px;
+  opacity: 1;
+  -webkit-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+#toggle:checked ~ .toddle-container .button {
+  opacity: 0;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+#toggle:checked ~ .toddle-container .button-toggle {
+  opacity: 1;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6510,7 +6654,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2% 0 4% 0;
+  padding: 0 0 4% 0;
   max-width: 100%;
 }
 
@@ -6559,7 +6703,7 @@ body {
   background-color: rgba(88, 88, 224, 0.9);
 }
 
-.contact_info h2 {
+.contact_info h3 {
   color: #fff;
   border-bottom: 2px solid #fff;
   text-align: center;
@@ -6641,14 +6785,14 @@ section {
           justify-content: space-evenly;
 }
 
-.s-brief_information .h2 {
+.s-brief_information .h3 {
   border-bottom: 2px solid #000;
   position: relative;
   text-transform: uppercase;
   margin-bottom: 2%;
 }
 
-.s-brief_information .h2 i {
+.s-brief_information .h3 i {
   position: absolute;
   top: 5%;
   left: -5%;
@@ -6700,6 +6844,27 @@ section {
   text-transform: uppercase;
 }
 
+.my_project .wrapper_project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.my_project .wrapper_project .project1, .my_project .wrapper_project .project2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.my_project .wrapper_project .project1 .project_info, .my_project .wrapper_project .project2 .project_info {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+
+.my_project .wrapper_project .project1 a, .my_project .wrapper_project .project2 a {
+  margin: 0 auto;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6709,7 +6874,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1% 0;
+  padding: 3% 0;
 }
 
 .f-logo {
@@ -6741,13 +6906,28 @@ section {
 }
 
 @media (max-width: 1600px) {
-  .s-brief_information .h2 i {
+  .s-brief_information .h3 i {
     left: -6%;
   }
 }
 
 @media (max-width: 1400px) {
-  .s-brief_information .h2 i {
+  .header .header_top .h2 {
+    font-size: 26px;
+  }
+  .header .header_top .nav ul a {
+    font-size: 14px;
+  }
+  .wrapper_project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper_project .project1 {
+    margin-bottom: 5%;
+  }
+  .s-brief_information .h3 i {
     left: -7%;
   }
   .skills ul li span {
@@ -6756,7 +6936,35 @@ section {
 }
 
 @media (max-width: 1199.98px) {
-  .s-brief_information .h2 i {
+  .header .header_top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .header .header_top .nav {
+    display: block;
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  .header .header_top .nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .toddle-container .button {
+    opacity: 1;
+  }
+  .s-brief_information .h3 i {
     left: -9%;
   }
   .skills ul li span {
@@ -6765,6 +6973,12 @@ section {
 }
 
 @media (max-width: 991.98px) {
+  .header_top .nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .summary {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6775,7 +6989,7 @@ section {
     width: 100%;
     border-radius: 0;
   }
-  .contact_info h2 {
+  .contact_info h3 {
     margin: 0 20% 10% 20%;
     padding-top: 10%;
   }
@@ -6789,18 +7003,41 @@ section {
   .s-brief_information {
     margin: 0 10%;
   }
+  .about_me {
+    margin-top: 3%;
+  }
 }
 
 @media (max-width: 767.98px) {
+  pre {
+    overflow: hidden;
+  }
+  code {
+    font-size: .7em;
+    overflow: hidden;
+  }
+  .wrapper_project .project1, .wrapper_project .project2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 8%;
+  }
+  .wrapper_project .project1 .project_info, .wrapper_project .project2 .project_info {
+    text-align: center;
+  }
   .s-brief_information {
     margin: 0 13%;
   }
-  .s-brief_information .h2 i {
+  .s-brief_information .h3 i {
     left: -12%;
   }
 }
 
 @media (max-width: 575.98px) {
+  code {
+    font-size: .5em;
+  }
   .header_foto {
     padding: 2% 0;
     margin: 0 auto;
@@ -6808,7 +7045,7 @@ section {
   .s-brief_information {
     margin: 0 15%;
   }
-  .s-brief_information .h2 i {
+  .s-brief_information .h3 i {
     left: -16%;
   }
   .contact_info li a i {
@@ -6817,13 +7054,16 @@ section {
 }
 
 @media (max-width: 420px) {
+  code {
+    font-size: .36em;
+  }
   .s-brief_information {
     margin: 0 17%;
   }
-  .s-brief_information .h2 {
+  .s-brief_information .h3 {
     font-size: 20px;
   }
-  .s-brief_information .h2 i {
+  .s-brief_information .h3 i {
     top: 13%;
     left: -20%;
     font-size: 20px;
@@ -6846,7 +7086,7 @@ section {
   .s-brief_information {
     margin: 0 18%;
   }
-  .s-brief_information .h2 i {
+  .s-brief_information .h3 i {
     left: -23%;
   }
   .skills ul li {
